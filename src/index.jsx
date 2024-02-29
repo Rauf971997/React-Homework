@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import CheckboxForm from './CheckboxForm';
+import CheckboxForm from './components/CheckboxForm';
 
 const rootContainer = document.querySelector('#root');
 
@@ -25,7 +25,16 @@ const checkboxesData = [
       { label: 'Option 3', value: 'option3' },
       { label: 'Option 4', value: 'option4' },
       { label: 'Option 5', value: 'option5' },
-      { label: 'Option 6', value: 'option6' },
+    ],
+  },
+
+  {
+    name: 'Group 3',
+    min: 1,
+    max: 2,
+    children: [
+      { label: 'Option 1', value: 'option1' },
+      { label: 'Option 2', value: 'option2' },
     ],
   },
 ];
